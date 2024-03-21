@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/triangle"
+        android:layout_width="700dp"
+        android:layout_height="400dp"
+        android:background="@drawable/triangle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/owl"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/owl"
+        app:layout_constraintLeft_toLeftOf="@id/questionMark"
+        app:layout_constraintRight_toRightOf="@id/questionMark"
+        app:layout_constraintTop_toTopOf="@id/questionMark" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/arrow"
+        android:backgroundTint="@color/white"
+        app:layout_constraintLeft_toLeftOf="@+id/logIn"
+        app:layout_constraintRight_toRightOf="@+id/logIn"
+        app:layout_constraintTop_toBottomOf="@+id/logIn" />
+
+    <TextView
+        android:id="@+id/logIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="LOG IN"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Trivia"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@id/owl"
+        app:layout_constraintStart_toStartOf="@+id/owl"
+        app:layout_constraintTop_toTopOf="@id/owl" />
+
+
+    <TextView
+        android:id="@+id/questionMark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="?"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/logIn"
+        app:layout_constraintStart_toStartOf="@id/logIn"
+        app:layout_constraintTop_toTopOf="@id/logIn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="70dp"
+        android:text="?"
+        android:textColor="@android:color/white"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@id/logIn"
+        app:layout_constraintStart_toStartOf="@id/logIn"
+        app:layout_constraintTop_toTopOf="@id/logIn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="50dp"
+        android:text="?"
+        android:textColor="@android:color/white"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@id/logIn"
+        app:layout_constraintStart_toStartOf="@id/logIn"
+        app:layout_constraintTop_toTopOf="@id/logIn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="------ OR ------"
+        android:alpha="0.3"
+        app:layout_constraintLeft_toLeftOf="@id/facebook"
+        app:layout_constraintRight_toRightOf="@id/facebook"
+        app:layout_constraintTop_toTopOf="@id/facebook" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Up with Email"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/facebook"
+        app:layout_constraintRight_toRightOf="@id/facebook"
+        app:layout_constraintTop_toTopOf="@id/facebook"
+        android:layout_marginTop="160dp"/>
+
+    <Button
+        android:id="@+id/facebook"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        android:text="Log in with Facebook"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/triangle"
+        app:layout_constraintRight_toRightOf="@id/triangle"
+        app:layout_constraintTop_toBottomOf="@id/triangle" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:text="GAME NOW"
+        android:textSize="20dp"
+        android:layout_marginTop="240dp"
+        app:layout_constraintLeft_toLeftOf="@id/facebook"
+        app:layout_constraintRight_toRightOf="@id/facebook"
+        app:layout_constraintTop_toTopOf="@id/facebook" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
